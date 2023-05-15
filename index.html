@@ -11,10 +11,40 @@
 		<p id="resultado">   </p>
 		<p id="txt_indicaciones">Presione el botón para iniciar el escaneo</p>
 		<button id = "btn_escaneo">Escanear</button>
+		<script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
+   		<script src="script.js"></script>
+
+		<div id = "tabla">
+			<table id="example" class="display" style="width:100%" display = "none">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bradley Greer</td>
+                <td>Software Engineer</td>
+                <td>London</td>
+                <td>41</td>
+                <td>2012-10-13</td>
+                <td>$132,000</td>
+            </tr>
+            
+          
+         
+        </tbody>
+   
+    </table>
+		</div>
 		<div id="contenedor"></div>
 		<!-- Cargamos Quagga y luego nuestro script -->
-		<script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
-   <script src="script.js"></script>
+		
   </body>
 
 </html>

@@ -1,10 +1,15 @@
 const button = document.querySelector("#btn_escaneo");
 
+document.addEventListener("DOMContentLoaded", () => {
+	document.getElementById('tabla').style.display = 'none';
+
+});
+
 button.addEventListener('click', (e) => {
 	
 	const $resultados = document.querySelector("#resultado");
-	$resultados.textContent = " ";
-
+	$resultados.textContent = " ";	
+	document.getElementById('tabla').style.display = 'block';
 	const $indicacion = document.querySelector("#txt_indicaciones");
 	$indicacion.textContent = "Dirija la cámara al código de barras";
 	Quagga.init({
